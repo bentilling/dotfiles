@@ -40,6 +40,9 @@ let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
 
 let g:UltiSnipsSnippetDirectories = ['~/Documents/Github/dotfiles/my_snippets']
+let g:UltiSnipsEditSplit = 'vertical'
+let g:UltiSnipsExpandTrigger="<tab>"                                            
+let g:UltiSnipsJumpForwardTrigger="<tab>"                                       
 
  let g:closetag_filetypes = 'html,xhtml,jsx,javascript' 
 inoremap " ""<left>
