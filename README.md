@@ -1,5 +1,9 @@
 # dotfiles
 
+## neovim
+
+Cheatsheet: https://devhints.io/vim
+
 NeoVim Config sits in
 Linux
 ```bash
@@ -9,3 +13,4 @@ Windows
 ```bash
 ~/AppData/Local/nvim/init.vim
 ```
+

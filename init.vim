@@ -27,20 +27,24 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
 " Syntax and linting
 Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
+
+" HTML Helpers
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-ragtag'
+
 call plug#end()
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
+
+let g:ragtag_global_maps = 1 
 
 " Search
 map <leader><space> :let @/=''<cr> " clear search
 :set ignorecase
 
 
-let g:ale_linters = {
-\ 'javascript': ['eslint']
-\ }
 let g:ale_fixers = {
-\ 'javascript': ['eslint']
+ \ 'javascript': ['eslint']
  \ }
  
 "let g:ale_sign_error = '❌'
