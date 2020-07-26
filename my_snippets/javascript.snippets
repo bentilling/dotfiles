@@ -1,7 +1,31 @@
-snippet ir "Import React"
-import React from 'react';
+snippet imp "Import Statement"
+import ${1:React }from '${2:react}';
 endsnippet
 
-snippet irh "Import React"
+snippet arr "Arrow Function"
+($1) => {
+	$2
+}
+endsnippet
+
+snippet rc.ch "React: Component Hooks"
 import React, { ${1: useState,} ${2:useEffect} } from 'react';
+
+const ${3: Component} = (props) => {
+	return (
+		<div>$4</div>)
+	);
+};
+
+export default $3;
+endsnippet
+
+snippet rc.us "React: Use State"
+const [$1, set$1] = useState($2);
+endsnippet
+
+snippet rc.ue "React: Use Effect"
+useEffect(() => {
+	$2
+},$1 )
 endsnippet
