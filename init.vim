@@ -29,7 +29,7 @@ Plug 'SirVer/ultisnips'
 
 " Syntax and linting
 Plug 'sheerun/vim-polyglot'
-Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " HTML Helpers
 Plug 'tpope/vim-surround'
@@ -44,12 +44,7 @@ let g:UltiSnipsEditSplit = 'vertical'
 let g:UltiSnipsExpandTrigger="<tab>"                                            
 let g:UltiSnipsJumpForwardTrigger="<tab>"                                       
 
- let g:closetag_filetypes = 'html,xhtml,jsx,javascript' 
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
+let g:closetag_filetypes = 'html,xhtml,jsx,javascript,tsx,typescript' 
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 inoremap <S-Tab> <ESC>la
@@ -61,13 +56,3 @@ cnoremap kj <C-C>
 " Search
 map <leader><space> :let @/=''<cr> " clear search
 :set ignorecase
-
-
-let g:ale_fixers = {
- \ 'javascript': ['eslint']
- \ }
- 
-"let g:ale_sign_error = '❌'
-" let g:ale_sign_warning = '⚠️'
-
-let g:ale_fix_on_save = 1
